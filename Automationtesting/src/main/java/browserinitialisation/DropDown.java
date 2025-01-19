@@ -11,8 +11,8 @@ public class DropDown extends Base {
 		driver.navigate().to("https://selenium.qabible.in/select-input.php");
 		WebElement dropdown = driver.findElement(By.id("single-input-field"));
 		Select select = new Select(dropdown);
-		//select.selectByVisibleText("Red");
-		//select.selectByValue("Red");
+		select.selectByVisibleText("Red");
+		select.selectByValue("Red");
 		select.selectByIndex(2);
 		
 		
